@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Quezon;
+    src: url(Quezon.ttf);
+}
+
+@font-face {
+    font-family: Novar;
+    src: url(Novar.ttf);
+}
+
+html, body{
+	background-color: white;
+	height: 100%;
+	min-width: 300px;
+  	margin: 0 auto;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	height: 15%;
+	min-height: 80px;
+	min-width: 100%;
+	background-color: white;
+	border-bottom: solid #c9a94b; 
+	border-width: 0.75em;
+	box-sizing: border-box;
+
+    z-index: 1000000;
+    overflow: hidden;
+    font-family: Quezon;
+}
+
+h1{
+	min-width: 250px;
+}
+
+header:hover { 
+    background-image: url('eyes.gif');
+    background-attachment: fixed;
+    background-position: center 0%;
+    color: yellowgreen;
+    background-size: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+.mainTitle{
+	margin: auto;
+}
+
+.mainPage{
+	position: fixed;
+	bottom: 0%;
+	height: 85%;
+	/*min-height: 200px;*/
+    min-width: 100%;
+	display: flex;
+	justify-content: center;
+
+    background-image: url("merged.png"), url("bldng2.jpg"), url("bldng2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 40%, auto 140%, cover;
+
+    z-index: 0;
+}
+
+.AboutMe{
+	position: relative;
+    z-index: 1000;
+    top: 100%;
+    min-height: 170%;
+    min-width: 100%;
+	background-color: red;
+	display: flex;
+}
+
+.PersonalInfo{
+	position: absolute;
+	background-color: #2c3f46;
+	min-height: 50%;
+	min-width: 100%;
+	display: inline-flex;
+	align-items: center;
+}
+
+.PictureFrame{
+	margin: 0 auto;
+	height: 20em;
+	width: 20em;
+
+	background-image: url("id.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.ContactInfo{
+	position: absolute;
+	display: block;
+	background-color: white;
+	min-height: 50%;
+	min-width: 100%;
+	text-align: center;
+	top: 100%;
+}
+
+.Parallax{
+	min-width: 100%;
+	min-height: 50%;
+	position: absolute;
+    background-image: url('bldng1.jpg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+}
+	
+.Temp{
+	height: 20em;
+	width: 60%;
+	display: block;
+	font-family: Quezon;
+	color: white;
+}
+
+.Temp p{
+	margin: 0 auto;
+	font-family: Novar;
+	max-width: 90%;
+}
+
+.NameHeader{
+	margin-left: 5%;
+	margin-top: 10px;
+	color: #c9a94b;
+}
+
+@media only screen and (max-width:650px){
+	header:hover { 
+    	font-size: 0.7em;
+	}
+	.PersonalInfo{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.PictureFrame{
+		margin: 0 auto;
+		display: flex;
+		background-color: blue;
+		margin-top: 40px;
+		height: 10em;
+		width: 10em;
+	}
+
+	.Temp{
+		margin: 0 auto;
+		margin-top: 20px;
+		position: absolute;
+		display: block;
+		text-align: center;
+		height: 45%;
+		width: 100%;
+	}
+}
+
+.ContactTitle{
+	margin-top: 20%;
+}
+
+@media only screen and (max-height: 600px){
+	.ContactTitle{
+		margin-top: 10%;
+	}
+}
+
+@media only screen and (min-width: 500px){
+	.NameHeader{
+		font-size: 3em;
+	}
+
+	.Temp p{
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (min-width: 850px){
+	.PersonalInfo{
+
+	}
+
+	.PictureFrame{
+
+	}
+
+	.Temp{
+
+	}
+
+	.NameHeader{
+		font-size: 3em;
+	}
+
+	.Temp p{
+		font-size: 1.75em;
+	}
+}
